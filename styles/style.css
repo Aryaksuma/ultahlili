@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-pink: #ff758c;
+  --secondary-pink: #ff7eb3;
+  --soft-pink: #ffeef2;
+  --glass-bg: rgba(255, 255, 255, 0.2);
+  --glass-border: rgba(255, 255, 255, 0.5);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+  color: #2d3436;
+}
+
+.login-body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glassmorphism Login */
+.glass-card {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 40px;
+  text-align: center;
+  max-width: 450px;
+  width: 90%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.emoji-header {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.glass-card h2 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.sub-heading {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-group input:focus {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+button[type="submit"] {
+  background: #fff;
+  color: #ff758c;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login_description {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Birthday Page Styles */
+.container {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  visibility: hidden;
+  background: var(--soft-pink);
+}
+
+.container > div {
+  left: 0;
+  right: 0;
+  top: 20vh;
+  position: absolute;
+  padding: 0 20px;
+}
+
+.one {
+  font-size: 4.5rem;
+  color: #ff758c;
+  font-weight: 600;
+}
+
+.two {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #636e72;
+  margin-top: 20px;
+}
+
+.three {
+  font-size: 3.5rem;
+  color: #d63031;
+}
+
+.four .text-box {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 117, 140, 0.2);
+  margin: 0 auto;
+  padding: 30px;
+  position: relative;
+  max-width: 600px;
+  width: 90%;
+}
+
+.hbd-chatbox {
+  font-size: 1.2rem;
+  color: #2d3436;
+  line-height: 1.6;
+  text-align: center !important;
+}
+
+.hbd-chatbox span {
+  visibility: hidden;
+}
+
+.fake-btn {
+  background: var(--primary-pink);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(255, 117, 140, 0.4);
+}
+
+.five p {
+  font-size: 2.2rem;
+  color: #ff758c;
+}
+
+.idea-5 {
+  font-size: 4rem !important;
+}
+
+.idea-6 span {
+  font-size: 12rem;
+  font-weight: 600;
+  color: #ff7eb3;
+  display: inline-block;
+}
+
+.six {
+  top: 15vh !important;
+}
+
+.profile-picture {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50% !important;
+  border: 10px solid #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hat {
+  position: absolute;
+  left: 48%;
+  top: -15%;
+  width: 80px;
+  transform: translateX(-50%) rotate(-15deg);
+  z-index: 2;
+}
+
+.wish-hbd {
+  font-size: 4rem;
+  margin-top: 30px;
+  color: #ff758c;
+}
+
+.wish-hbd span {
+  display: inline-block;
+}
+
+.wish-text {
+  font-size: 1.2rem;
+  color: #636e72;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+/* Balloons & Decor */
+.ballons img {
+  width: 80px;
+  position: absolute;
+}
+
+.eight svg {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  visibility: hidden;
+}
+
+/* Replay Button */
+.nine p {
+  font-size: 1.8rem;
+  color: #ff758c;
+}
+
+#replay {
+  background: #fff;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 30px;
+  color: #ff758c;
+  font-weight: 600;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#replay:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 117, 140, 0.2);
+}
+
+.last-smile {
+  font-size: 3rem;
+  margin-top: 20px;
+  display: block;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Floating Hearts Background */
+.bg-decor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.heart {
+  position: absolute;
+  color: rgba(255, 117, 140, 0.3);
+  font-size: 20px;
+  animation: heartFloat linear infinite;
+}
+
+@keyframes heartFloat {
+  0% { transform: translateY(110vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .one { font-size: 2.5rem; }
+  .three { font-size: 2rem; }
+  .idea-6 span { font-size: 6rem; }
+  .profile-picture { height: 200px; width: 200px; }
+  .wish-hbd { font-size: 2.5rem; }
+  .wish-text { font-size: 1rem; }
+  .nine p { font-size: 1.2rem; }
+}
